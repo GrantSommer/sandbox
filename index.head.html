@@ -8,6 +8,7 @@ text-align:center;
 width:100%;
 padding:2px;
 background:green;
+color:white;
 }
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -15,7 +16,7 @@ background:green;
 $(function(){
   $("body").append("<span class='welcome'>Welcome to the <strong>Sandbox Website</strong>! Open Inspect Element and edit the page! <button class='close'>&times;</button></span>");
   $(".welcome .close").click(function(){
-    $(".welcome").hide();
+    $(".welcome").fadeOut("fast");
   });
 })
 </script>
